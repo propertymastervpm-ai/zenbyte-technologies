@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Logo } from "@/components/brand/Logo";
+import { VpmLogo } from "@/components/brand/VpmLogo";
 import { Container } from "@/components/ui/Container";
 import { navItems } from "@/data/navigation";
 import { services } from "@/data/services";
@@ -64,21 +65,11 @@ export function Footer() {
         </div>
       </Container>
 
-      <Container className="flex flex-col gap-3 border-t border-white/10 py-5 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>
-          © {year} {site.name}. All rights reserved.
+      <Container className="flex flex-col gap-4 border-t border-white/10 py-5 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-sm text-slate-400">
+          Copyright © {year} {site.name}. All rights reserved.
         </p>
-        <p>
-          Product:{" "}
-          <a
-            href={site.product.url}
-            className="text-slate-300 hover:text-white"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {site.product.name}
-          </a>
-        </p>
+        <VpmLogo heightClass="h-8" />
       </Container>
     </footer>
   );

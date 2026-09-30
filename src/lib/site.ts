@@ -33,7 +33,7 @@ export const site = {
   countryName: "India",
   product: {
     name: "Virtual Property Master",
-    url: "https://www.virtualpropertymaster.com",
+    url: "https://virtualpropertymaster.com",
     tagline: "Property Management, Reimagined.",
   },
 } as const;

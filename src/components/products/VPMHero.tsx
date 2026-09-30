@@ -1,3 +1,4 @@
+import { VpmLogo } from "@/components/brand/VpmLogo";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { site } from "@/lib/site";
@@ -22,9 +23,8 @@ export function VPMHero() {
               <p className="text-xs font-semibold tracking-[0.2em] text-cyan-100 uppercase">
                 Flagship Product
               </p>
-              <h2 className="mt-3 font-display text-3xl font-semibold text-white sm:text-4xl">
-                {site.product.name}
-              </h2>
+              <VpmLogo className="mt-4" heightClass="h-12 sm:h-14" />
+              <h2 className="sr-only">{site.product.name}</h2>
               <p className="mt-4 text-base leading-7 text-slate-300">
                 Virtual Property Master helps property owners and managers run rental operations
                 from one dashboard: tenant records, rent tracking, reminders, documents, and

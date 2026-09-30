@@ -1,4 +1,5 @@
 import { Building2, BellRing, FileStack, IndianRupee } from "lucide-react";
+import { VpmLogo } from "@/components/brand/VpmLogo";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container } from "@/components/ui/Container";
@@ -31,7 +32,7 @@ export function ProductFeature() {
               <h2 className="mt-3 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
                 {site.product.tagline}
               </h2>
-              <p className="mt-3 text-sm font-medium text-slate-200">{site.product.name}</p>
+              <VpmLogo className="mt-5" heightClass="h-11 sm:h-12" />
               <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
                 Virtual Property Master is a Zenbyte Technologies product. It helps property owners
                 and managers simplify rental operations, from tenant management and rent tracking to
