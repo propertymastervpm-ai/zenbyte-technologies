@@ -54,8 +54,8 @@ export function ProductFeature() {
               </div>
             </Reveal>
 
-            <Reveal delay={0.08}>
-              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 backdrop-blur">
+            <Reveal delay={0.08} className="[perspective:900px]">
+              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 backdrop-blur transition duration-500 [transform:rotateX(2deg)] motion-reduce:transform-none motion-reduce:transition-none hover:[transform:rotateX(0deg)_translateY(-4px)] motion-reduce:hover:transform-none">
                 <div className="flex items-center justify-between gap-3">
                   <p className="text-sm font-medium text-white">Owner view</p>
                   <p className="text-xs text-slate-400">Illustrative</p>

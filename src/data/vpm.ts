@@ -31,7 +31,7 @@ export const vpmProblems = [
 
 export const vpmBenefits = [
   "Rent status is visible across units instead of reconstructed from messages.",
-  "Reminders go out through WhatsApp and SMS, including notices after the 5th.",
+  "Reminders go out through WhatsApp and SMS, with follow-up after the 5th and late-fee tracking.",
   "Tenant records, verification, and documents sit in one operational system.",
   "Payments can be tracked across UPI, bank transfer, and cash.",
   "More than one property or building can be managed together.",
@@ -44,7 +44,7 @@ export const vpmFeatures = [
   },
   {
     title: "Automated Reminders",
-    text: "Send WhatsApp and SMS reminders, including automatic notices after the 5th, with penalty tracking until payment is recorded.",
+    text: "Send WhatsApp and SMS reminders on the 1st, escalate after the 5th, and track late fees until payment is recorded.",
   },
   {
     title: "Tenant Management",
