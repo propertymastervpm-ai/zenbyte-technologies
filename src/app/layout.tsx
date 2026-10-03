@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     description:
       "Custom software, SaaS products, web applications, and automation from Zenbyte Technologies, Bengaluru.",
   },
+  other: {
+    "facebook-domain-verification": "5x35ojxyo1bjn1v5xuas77e7ui8g49",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
