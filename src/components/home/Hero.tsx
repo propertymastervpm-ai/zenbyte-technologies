@@ -1,4 +1,6 @@
 import { HeroScene } from "@/components/home/HeroScene";
+import { RevealText } from "@/components/motion/RevealText";
+import { ScrollShift } from "@/components/motion/ScrollShift";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -10,13 +12,14 @@ export function Hero() {
     <section className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24">
       <div className="tech-grid pointer-events-none absolute inset-0" aria-hidden="true" />
       <div className="hero-glow pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="ambient-field pointer-events-none absolute inset-0" aria-hidden="true" />
       <Container className="relative grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
         <Reveal>
           <p className="text-xs font-semibold tracking-[0.24em] text-cyan-200/90 uppercase">
             Zenbyte Technologies
           </p>
           <h1 className="mt-4 max-w-xl font-display text-[2.35rem] leading-[1.08] font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Engineering Software for the Future.
+            <RevealText text="Engineering Software for the Future." />
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
             We design, build and scale intelligent software products and digital solutions for
@@ -40,9 +43,9 @@ export function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.08}>
+        <ScrollShift fromX={28} toX={-48} fromScale={0.9} toScale={1.03}>
           <HeroScene />
-        </Reveal>
+        </ScrollShift>
       </Container>
     </section>
   );

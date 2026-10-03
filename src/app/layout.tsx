@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Outfit } from "next/font/google";
+import { CursorGlow } from "@/components/motion/CursorGlow";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/ui/JsonLd";
@@ -66,6 +67,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
+        <CursorGlow />
         <Header />
         <main id="main" className="flex-1">
           {children}

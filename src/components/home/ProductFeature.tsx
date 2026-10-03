@@ -1,5 +1,6 @@
 import { Building2, BellRing, FileStack, IndianRupee } from "lucide-react";
 import { VpmLogo } from "@/components/brand/VpmLogo";
+import { ScrollShift } from "@/components/motion/ScrollShift";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { Container } from "@/components/ui/Container";
@@ -54,8 +55,8 @@ export function ProductFeature() {
               </div>
             </Reveal>
 
-            <Reveal delay={0.08} className="[perspective:900px]">
-              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 backdrop-blur transition duration-500 [transform:rotateX(2deg)] motion-reduce:transform-none motion-reduce:transition-none hover:[transform:rotateX(0deg)_translateY(-4px)] motion-reduce:hover:transform-none">
+            <ScrollShift className="[perspective:900px]" fromX={40} toX={-20} fromScale={0.9}>
+              <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-5 backdrop-blur">
                 <div className="flex items-center justify-between gap-3">
                   <p className="text-sm font-medium text-white">Owner view</p>
                   <p className="text-xs text-slate-400">Illustrative</p>
@@ -76,7 +77,7 @@ export function ProductFeature() {
                   across units. This panel shows the kind of view, not live customer data.
                 </p>
               </div>
-            </Reveal>
+            </ScrollShift>
           </div>
         </div>
       </Container>

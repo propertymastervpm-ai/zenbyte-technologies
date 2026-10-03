@@ -1,3 +1,4 @@
+import { ScrollShift } from "@/components/motion/ScrollShift";
 import { Reveal } from "@/components/ui/Reveal";
 import { Section, SectionHeading } from "@/components/ui/SectionHeading";
 
@@ -23,7 +24,7 @@ export function About() {
             description="Zenbyte Technologies builds software applications, digital products, and scalable technology solutions. We work as product creators and as an engineering partner for businesses that need software they can rely on."
           />
         </Reveal>
-        <div className="grid gap-4">
+        <ScrollShift className="grid gap-4" fromX={-24} toX={32} fromScale={0.96}>
           {positions.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.06}>
               <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
@@ -32,7 +33,7 @@ export function About() {
               </article>
             </Reveal>
           ))}
-        </div>
+        </ScrollShift>
       </div>
     </Section>
   );

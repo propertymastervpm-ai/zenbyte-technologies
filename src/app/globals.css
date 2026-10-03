@@ -99,6 +99,19 @@ p {
   }
 }
 
+.ambient-field {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(125, 211, 252, 0.16), transparent 18%),
+    radial-gradient(circle at 78% 18%, rgba(167, 139, 250, 0.14), transparent 16%),
+    radial-gradient(circle at 62% 72%, rgba(125, 211, 252, 0.08), transparent 14%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ambient-field {
+    animation: glow-shift 16s ease-in-out infinite alternate;
+  }
+}
+
 input,
 select,
 textarea {
